@@ -1,5 +1,17 @@
 # Kafka
 
+## Python install
+
+```bash
+deactivate
+rm -rf venv/
+/usr/bin/python3 -vm venv venv
+. venv/bin/activate.fish
+pip install uv
+uv pip install kafka-python black
+```
+
+
 ## Docker compose
 
 ```bash
@@ -92,3 +104,9 @@ start.time, end.time, data.consumed.in.MB, MB.sec, data.consumed.in.nMsg, nMsg.s
 WARNING: Exiting before consuming the expected number of messages: timeout (6000 ms) exceeded. You can use the --timeout option to increase the timeout.
 2024-10-17 18:44:19:332, 2024-10-17 18:44:25:443, 0.0000, 0.0000, 0, 0.0000, 666, 5445, 0.0000, 0.0000
 ```
+
+## Python
+
+
+- https://kafka-python.readthedocs.io/en/master/apidoc/KafkaConsumer.html
+- https://kafka-python.readthedocs.io/en/master/apidoc/KafkaProducer.html
